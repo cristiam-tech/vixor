@@ -26,7 +26,7 @@
     {
       id: 'demo-1',
       title: 'Flower (demo)',
-      url: 'https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4',
+      url: 'https://res.cloudinary.com/dotfy5vbe/video/upload/476323550-415ff296-33be-4fb1-b9c2-3d24ebd0830e_r3nce6.mp4',
       likes: 12,
       category: 'motivacional',
       createdAt: Date.now() - 1000,
@@ -215,4 +215,5 @@
 
     // Inicial: si estamos en demo ya llamamos render en el bloque anterior
   });
+
 })();
