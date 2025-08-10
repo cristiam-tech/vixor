@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Virox — Videos motivacionales</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <h1>Virox</h1>
+    <div class="upload">
+      <label id="uploadLabel" class="btn">Subir video
+        <input id="fileInput" type="file" accept="video/*" hidden>
+      </label>
+      <span id="uploadStatus"></span>
+    </div>
+  </header>
+
+  <main class="player-area">
+    <div id="videosContainer" class="videos-container">
+      <!-- Videos se insertan dinámicamente -->
+    </div>
+    <div class="controls">
+      <button id="prevBtn">Anterior</button>
+      <button id="nextBtn">Siguiente</button>
+    </div>
+  </main>
+
+  <footer class="footer">Virox — videos motivacionales y educativos</footer>
+
+  <!-- Firebase (compat) CDN: sólo necesarios si vas a usar Firestore en producción -->
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth-compat.js"></script>
+
+  <!-- app.js debe estar al final -->
+  <script src="app.js"></script>
+</body>
+</html>
